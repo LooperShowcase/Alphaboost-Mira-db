@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+</head>
+<body>
+    <ul>
+        <li id="secret"><a class="active" href="index.html">Home</a></li>
+        <li id="secret"><a href="top_youtubers.html">Top youtubers</a></li>
+        <li id="secret"><a href="top_videos.html">first youtube video</a></li>
+        <li id="secret"><a href="news.html">shorts</a></li>
+        <li id="secret"><a href="image.html">Images</a></li>
+        <li id="secret"><a href="login.html">log in</a></li>    
+      </ul>
+      <br>
+
+      <input
+      onchange="ChangeImage()"
+      id="myPic" 
+      type="file"
+      >
+
+      <img id="Profile" src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg" width="10%">
+      
+      <form action="/action_page.php">
+        <label for="firstName">First name:</label>
+      <input type="text" id="firstName" name="firstName"><br><br>
+      <label for="lastName">Last name:</label>
+      <input type="text" id="lastName" name="lastName"><br><br>
+        <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+        <label for="freeform">Tell us how you heard about us:</label>
+      <br>
+      <textarea id="freeform" name="freeform" rows="4" cols="50">
+      </textarea><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    
+
+      <script>
+        function ChangeImage(){
+        var newImage=document.getElementById("myPic").files[0].name;
+        document.getElementById("Profile").src=newImage;
+        }
+        
+      </script>
+</body>
+</html>

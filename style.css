@@ -1,0 +1,40 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(227, 19, 19, 0.921);
+  font-size: small  ;
+}
+
+li a {
+  display: block;
+  font-size: large;
+  color: white;
+  text-align: center;
+  padding: 14px 80px;
+  text-decoration: none;
+}
+
+#secret {
+  float: left;
+  width: "50%"  ;
+}
+
+li a:hover {
+  background-color: rgb(242, 29, 29);
+}
+
+#div1 {
+  background-color: rgba(255, 37, 37, 0.793);
+}
+#div2 {
+  background-color: rgba(238, 47, 47, 0.604);
+}
+#News
+{
+  background-color: rgb(227, 21, 21);
+}
+label{
+  font-size: x-large;
+}
